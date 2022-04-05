@@ -42,12 +42,3 @@ sed -i 's/192.168.1.1/192.168.10.1/g' package/base-files/files/bin/config_genera
 # 删除软件包
 rm -rf package/lean/luci-theme-argon
 
-# Add kernel build user
-[ -z $(grep "CONFIG_KERNEL_BUILD_USER=" .config) ] &&
-    echo 'CONFIG_KERNEL_BUILD_USER="MOLUN"' >>.config ||
-    sed -i 's@\(CONFIG_KERNEL_BUILD_USER=\).*@\1$"MOLUN"@' .config
-
-# Add kernel build domain
-[ -z $(grep "CONFIG_KERNEL_BUILD_DOMAIN=" .config) ] &&
-    echo 'CONFIG_KERNEL_BUILD_DOMAIN="GitHub Actions"' >>.config ||
-    sed -i 's@\(CONFIG_KERNEL_BUILD_DOMAIN=\).*@\1$"GitHub Actions"@' .config
