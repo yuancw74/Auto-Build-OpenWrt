@@ -14,6 +14,8 @@
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
 # Add a feed source
+
+git clone https://github.com/yuancw74/luci/tree/openwrt-21.02/applications/luci-app-baidupcs-web package/luci-app-baidupcs-web
 # sed -i '$a src-git bypass https://github.com/kiddin9/openwrt-bypass' >>feeds.conf.default
 sed -i '$a src-git kiddin9 https://github.com/kiddin9/openwrt-packages' feeds.conf.default
 # sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
