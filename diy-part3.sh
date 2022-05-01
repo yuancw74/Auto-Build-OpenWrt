@@ -16,7 +16,7 @@
 # Add a feed source
 #echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 # sed -i '$a src-git lede https://github.com/coolsnowwolf/luci' feeds.conf.default
-git clone -b openwrt-21.02 https://github.com/immortalwrt/luci/applications/luci-app-baidupcs-web package/luci-app-baidupcs-web
+git clone  https://github.com/KFERMercer/luci-app-baidupcs-web package/luci-app-baidupcs-web
 sed -i '$a src-git kiddin9 https://github.com/kiddin9/openwrt-packages' feeds.conf.default
 
 sed -i '$a src-git imm https://github.com/immortalwrt/luci.git;openwrt-21.02' feeds.conf.default
