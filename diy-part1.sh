@@ -15,10 +15,12 @@
 
 # Add a feed source
 
-git clone -b openwrt-21.02 https://github.com/yuancw74/luci/applications/luci-app-baidupcs-web package/luci-app-baidupcs-web
+# git clone -b openwrt-21.02 https://github.com/yuancw74/luci/applications/luci-app-baidupcs-web package/luci-app-baidupcs-web
+
+#sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
 # sed -i '$a src-git bypass https://github.com/kiddin9/openwrt-bypass' >>feeds.conf.default
 sed -i '$a src-git kiddin9 https://github.com/kiddin9/openwrt-packages' feeds.conf.default
 # sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
-sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
-# sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
+# sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
+sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
 # sed -i '$a src-git small8 https://github.com/kenzok8/small-package' feeds.conf.default
