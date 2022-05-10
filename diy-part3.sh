@@ -20,10 +20,11 @@ git clone  https://github.com/KFERMercer/luci-app-baidupcs-web package/luci-app-
 # git clone  https://github.com/deplives/luci-app-turboacc package/luci-app-turboacc
 git clone https://github.com/sbwml/openwrt-alist package/openwrt-alist
 sed -i '$a src-git imm https://github.com/immortalwrt/luci.git;openwrt-21.02' feeds.conf.default
-sed -i '$a src-git kiddin9 https://github.com/kiddin9/openwrt-packages' feeds.conf.default
 sed -i '$a src-git small8 https://github.com/kenzok8/small-package' feeds.conf.defaul
-sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
+sed -i '$a src-git kiddin9 https://github.com/kiddin9/openwrt-packages' feeds.conf.default
+# sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
 # sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
+
 
 # Define My Package
 #git clone https://github.com/vernesong/OpenClash package/molun/luci-app-openclash
