@@ -40,5 +40,5 @@ sed -i 's/192.168.1.1/192.168.10.1/g' package/base-files/files/bin/config_genera
 #sed -i 's/key=15581822425/key=gds.2021/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
 
 # 删除软件包
-rm -rf package/lean/luci-theme-argon
+# rm -rf package/lean/luci-theme-argon
 
