@@ -8,9 +8,9 @@ env:
   REPO_URL: https://github.com/openwrt/openwrt
   REPO_BRANCH: v21.02.3
   FEEDS_CONF: feeds.conf.default
-  CONFIG_FILE: openwrt3.config
+  CONFIG_FILE: X86-64.config
   DIY_P1_SH: diy-part3.sh
-  DIY_P2_SH: diy-part2.sh
+  DIY_P2_SH: diy-part4.sh
   UPLOAD_BIN_DIR: true
   UPLOAD_FIRMWARE: true
   UPLOAD_COWTRANSFER: false
