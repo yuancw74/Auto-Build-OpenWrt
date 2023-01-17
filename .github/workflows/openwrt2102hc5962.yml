@@ -25,7 +25,7 @@ on:
 
 env:
   REPO_URL: https://salvation-pig:fd200438@gitee.com/salvation-pig/openwrt-package.git
-  REPO_BRANCH: v22.03
+  REPO_BRANCH: openwrt-22.03
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: Lean_LEDE_HC5962-2.config
   DIY_P2_SH: diy-part4.sh
